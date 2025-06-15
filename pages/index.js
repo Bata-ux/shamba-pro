@@ -28,7 +28,17 @@ export default function Home() {
           <meta name="description" content="The most advanced farming app for Africa" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-600 via-green-700 to-green-800 text-white text-center relative overflow-hidden">
+        <div style={{
+  minHeight: '100vh',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  background: 'linear-gradient(135deg, #16a34a, #15803d, #166534)',
+  color: 'white',
+  textAlign: 'center',
+  position: 'relative',
+  overflow: 'hidden'
+}}>
           <div className="absolute inset-0 bg-black bg-opacity-20"></div>
           <div className="relative z-10 animate-pulse">
             <div className="text-6xl mb-4 animate-bounce">🐐</div>

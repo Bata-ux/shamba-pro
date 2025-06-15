@@ -113,7 +113,7 @@ export default function Home() {
   }}
   disabled={!email || !password}
 >
-              >
+            
                 Enter Farm Dashboard
               </Button>
             </div>

@@ -67,7 +67,15 @@ export default function Home() {
           <title>Login - Shamba Pro</title>
           <meta name="description" content="Access your farm management system" />
         </Head>
-        <div className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-br from-green-50 via-white to-blue-50">
+        <div style={{
+  minHeight: '100vh',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  padding: '0 1.5rem',
+  background: 'linear-gradient(135deg, #f0fdf4, #ffffff, #eff6ff)'
+}}>
           <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md border">
             <div className="text-center mb-8">
               <div className="text-5xl mb-4">🐐</div>
@@ -92,9 +100,19 @@ export default function Home() {
                 className="w-full p-3 text-lg border-2 rounded-xl"
               />
               <Button
-                onClick={() => setUser({ email })}
-                className="bg-green-600 hover:bg-green-700 text-white w-full py-3 text-lg rounded-xl"
-                disabled={!email || !password}
+  onClick={() => setUser({ email })}
+  style={{
+    backgroundColor: '#16a34a',
+    color: 'white',
+    width: '100%',
+    padding: '0.75rem',
+    fontSize: '1.125rem',
+    borderRadius: '0.75rem',
+    border: 'none',
+    cursor: 'pointer'
+  }}
+  disabled={!email || !password}
+>
               >
                 Enter Farm Dashboard
               </Button>

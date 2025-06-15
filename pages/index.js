@@ -99,7 +99,7 @@ export default function Home() {
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full p-3 text-lg border-2 rounded-xl"
               />
-              <Button
+       <Button
   onClick={() => setUser({ email })}
   style={{
     backgroundColor: '#16a34a',
@@ -113,7 +113,6 @@ export default function Home() {
   }}
   disabled={!email || !password}
 >
-            
                 Enter Farm Dashboard
               </Button>
             </div>

@@ -633,7 +633,20 @@ function ShambaMobileDashboard() {
                 'Ng\'ombe wangu hawatoi maziwa',
                 'Mifugo yangu ni wagonjwa',
                 'Chakula g
-                {selectedLanguage === 'swahili' && [
+               'Chakula gani ni bora?'
+              ].map((q, idx) => (
+                <Button
+                  key={idx}
+                  size="sm"
+                  variant="outline"
+                  onClick={() => setChatInput(q)}
+                  className="text-xs rounded-full"
+                >
+                  {q}
+                </Button>
+              ))}
+
+              {selectedLanguage === 'english' && [
                 'Ng\'ombe wangu hawatoi maziwa',
                 'Mifugo yangu ni wagonjwa',
                 'Chakula gani ni bora?'

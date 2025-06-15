@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import { Button } from "../components/ui/button";
-import { Input } from "../components/ui/input";
+import { Button } from "../components/ui/button.jsx";
+import { Input } from "../components/ui/input.jsx";
 import {
 Plus, Users, Droplets, Scale, Heart, Calendar, BarChart3, Menu, X,
 Cloud, CloudRain, Sun, Thermometer, DollarSign, Syringe,
